@@ -1,0 +1,184 @@
+@font-face {
+    font-family: 'Gotham';
+    src: url('fonts/GothamBold.ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('fonts/GothamMedium.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('fonts/GothamLight.ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+html {
+    font-family: Gotham;
+    color: navajowhite;
+}
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #8A9FB7;
+    background-color: #8A9FB7;
+}
+
+.tab button {
+    background-color: #8A9FB7;
+    color: #172D4F;
+    font-family: Gotham;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+.tab button:hover {
+    background-color: #468FA7;
+}
+
+.tab button.active {
+    background-color: #468FA7;
+}
+
+.tabContent {
+    padding: 5%;
+    animation: fadeEffect 0.5s;
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+a:link {
+    color: hotpink;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: hotpink;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: mediumpurple;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: rebeccapurple;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.main {
+    padding: 5% 15%;
+}
+
+.main {
+    display: flex;
+}
+
+.left {
+    flex: 50%;
+    padding: 10px;
+}
+
+.right {
+    flex: 50%;
+    padding: 10px;
+}
+
+.album-table table {
+    table-layout: fixed;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.album-table table tr {
+    height: 28px;
+    overflow: auto;
+}
+
+.album-table table tr td:nth-child(2) {
+    text-align: left;
+    width: 70%;
+}
+
+.click-here {
+    background-color: Transparent;
+    color: navajowhite;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    font-family: 'Gotham';
+    text-align: left;
+}
+
+.the-book {
+    background-color: #886060;
+}
+
+.the-book tbody tr:nth-child(odd) {
+    background-color: #976B6B;
+}
+
+.e-side {
+    background-color: #BD3D42;
+}
+
+.e-side tbody tr:nth-child(odd) {
+    background-color: #D2444A;
+}
+
+.the-book-2 {
+    background-color: #507254;
+}
+
+.the-book-2 tbody tr:nth-child(odd) {
+    background-color: #597F5E;
+}
+
+.e-side-2 {
+    background-color: #4F48DF;
+}
+
+.e-side-2 tbody tr:nth-child(odd) {
+    background-color: #5850F8;
+}
+
+.the-book-3 {
+    background-color: #716E2C;
+}
+
+.the-book-3 tbody tr:nth-child(odd) {
+    background-color: #7E7A31;
+}
+
+.calculator-table {
+    background-color: grey;
+    table-layout: fixed;
+    margin: auto;
+    width: 50%;
+}
+
+.use-romaji {
+    position: fixed;
+    bottom: 64px;
+    left: 64px;
+}
