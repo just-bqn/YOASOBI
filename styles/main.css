@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/GothamMedium.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+html {
+    font-family: 'Gotham';
+    color: navajowhite;
+}
+
+.body {
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    padding: 5% 15%;
+}
+
+.upper {
+    display: flex;
+}
+
+.left {
+    flex: 50%;
+    padding: 10px;
+}
+
+.right {
+    flex: 50%;
+    padding: 10px;
+}
+
+a:visited {
+    color: lightslategray;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: slategray;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: slategray;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.click-here {
+    background-color: Transparent;
+    color: lightsalmon;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    font-family: 'Gotham';
+    text-align: left;
+}

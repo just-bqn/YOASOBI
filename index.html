@@ -4,25 +4,29 @@
   <head>
     <meta charset="UTF-8">
     <title>Discography of YOASOBI</title>
-    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="styles/main.css"/>
+    <link rel="stylesheet" href="styles/tabs.css"/>
+    <link rel="stylesheet" href="styles/albums.css"/>
+    <link rel="stylesheet" href="styles/calculator.css"/>
+    <link rel="stylesheet" href="styles/romaji-toggle.css"/>
   </head>
 
   <body>
     <script src="https://open.spotify.com/embed/iframe-api/v1" async></script>
 
-    <div class="tab">
-      <button class="tab-links" onclick="openTab('about')" id="default-tab">About</button>
+    <div class="nav-bar">
+      <button class="tab-links" onclick="openTab('about')">About</button>
       <button class="tab-links" onclick="openTab('the-book')">THE BOOK</button>
       <button class="tab-links" onclick="openTab('e-side')">E-SIDE</button>
       <button class="tab-links" onclick="openTab('the-book-2')">THE BOOK 2</button>
       <button class="tab-links" onclick="openTab('e-side-2')">E-SIDE 2</button>
       <button class="tab-links" onclick="openTab('the-book-3')">THE BOOK 3</button>
-      <button class="tab-links" onclick="openTab('calculator')">Calculator</button>
+      <button class="tab-links" onclick="openTab('calculator')" id="default-tab">Calculator</button>
       <button class="tab-links" onclick="openTab('biri-biri')">Biri-Biri</button>
     </div>
 
     <div class="content">
-      <div class="main">
+      <div class="upper">
         <div class="left">
           <div class="tab-content about">
             <h1>Who is YOASOBI?</h1>
@@ -836,35 +840,83 @@
           <div class="tab-content calculator">
             <h1>What is this tab?</h1>
             <p>
-              This is a simple calculator, with support for basic arithmetic operations over 64-bit signed integers, including addition, subtraction, multiplication, integer division and modulus.
+              This is a simple calculator.
               You can enter input with either your keyboard or on-screen buttons.
-            </p>
-
-            <h1>Why is this tab here?</h1>
-            <p>
-              I don't know. Perhaps you'd like to calculate how much you have spent on YOASOBI albums?
-            </p>
-
-            <div class="calculator-table">
-              <table>
+              The expression is parsed with <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval" target="_blank">eval()</a>.
+              <table class="calculator-keyboard-mapping-table">
                 <tbody>
-                <tr>
-                  <td><button class="square-button">1</button></td>
-                  <td><button class="square-button">2</button></td>
-                  <td><button class="square-button">3</button></td>
-                </tr>
-                <tr>
-                  <td><button class="square-button">4</button></td>
-                  <td><button class="square-button">5</button></td>
-                  <td><button class="square-button">6</button></td>
-                </tr>
-                <tr>
-                  <td><button class="square-button">7</button></td>
-                  <td><button class="square-button">8</button></td>
-                  <td><button class="square-button">9</button></td>
-                </tr>
+                  <tr>
+                    <th>Keyboard</th>
+                    <td>2</td>
+                    <td>&ast;</td>
+                    <td>&sol;</td>
+                    <td>&ast;&ast;</td>
+                    <td>Enter</td>
+                    <td>Backspace</td>
+                    <td>Delete</td>
+                  </tr>
+                  <tr>
+                    <th>Parsed as</th>
+                    <td>2</td>
+                    <td>&times;</td>
+                    <td>&divide;</td>
+                    <td>pow()</td>
+                    <td>=</td>
+                    <td>C</td>
+                    <td>AC</td>
+                  </tr>
                 </tbody>
               </table>
+            </p>
+
+            Don't ask me why this tab is here, maybe you'd need to calculate how much you've spent on YOASOBI albums?
+
+            <div class="calculator-wrapper">
+              <div class="calculator-">
+                  <div class="calculator-screen">
+                    <div class="calculator-input">&nbsp;</div>
+                    <div class="calculator-output">&nbsp;</div>
+                  </div>
+
+                <div class="calculator-buttons">
+                  <div class="calculator-buttons-rows-wrapper">
+                    <div class="calculator-buttons-row">
+                      <button class="calculator-button" onclick="processInput('ac')">AC</button>
+                      <button class="calculator-button" onclick="processInput('c')">C</button>
+                      <button class="calculator-button" onclick="processInput('.')">&period;</button>
+                      <button class="calculator-button" onclick="processInput('/')">&divide;</button>
+                    </div>
+
+                    <div class="calculator-buttons-row">
+                      <button class="calculator-button" onclick="processInput('7')">7</button>
+                      <button class="calculator-button" onclick="processInput('8')">8</button>
+                      <button class="calculator-button" onclick="processInput('9')">9</button>
+                      <button class="calculator-button" onclick="processInput('*')">&times;</button>
+                    </div>
+
+                    <div class="calculator-buttons-row">
+                      <button class="calculator-button" onclick="processInput('4')">4</button>
+                      <button class="calculator-button" onclick="processInput('5')">5</button>
+                      <button class="calculator-button" onclick="processInput('6')">6</button>
+                      <button class="calculator-button" onclick="processInput('-')">&minus;</button>
+                    </div>
+
+                    <div class="calculator-buttons-row">
+                      <button class="calculator-button" onclick="processInput('1')">1</button>
+                      <button class="calculator-button" onclick="processInput('2')">2</button>
+                      <button class="calculator-button" onclick="processInput('3')">3</button>
+                      <button class="calculator-button" onclick="processInput('+')">&plus;</button>
+                    </div>
+
+                    <div class="calculator-buttons-row">
+                      <button class="calculator-button" onclick="processInput('(')">&lpar;</button>
+                      <button class="calculator-button" onclick="processInput('0')">0</button>
+                      <button class="calculator-button" onclick="processInput(')')">&rpar;</button>
+                      <button class="calculator-button" onclick="processInput('=')">&equals;</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -912,7 +964,7 @@
         </div>
 
         <div class="right">
-          <div id="embed-iframe"></div>
+          <div class="embed-iframe"></div>
         </div>
       </div>
 
@@ -925,92 +977,17 @@
       Use Romaji for Japanese text? Click here to toggle!
     </button>
 
-    <script>
-      useRomaji = false;
+    <script src="scripts/main.js"></script>
+    <script src="scripts/calculator.js"></script>
 
-      function updateRomaji() {
-        let i, japContent, romContent;
+    <script src="https://open.spotify.com/embed/iframe-api/v1" async></script>
 
-        japContent = document.querySelectorAll(".jap");
-        romContent = document.querySelectorAll(".rom");
-
-        if (useRomaji) {
-          for (i = 0; i < japContent.length; i++)
-            japContent[i].style.display = "none";
-          for (i = 0; i < romContent.length; i++)
-            romContent[i].style.display = "block";
-        }
-        else {
-          for (i = 0; i < japContent.length; i++)
-            japContent[i].style.display = "block";
-          for (i = 0; i < romContent.length; i++)
-            romContent[i].style.display = "none";
-        }
-      }
-      function openTab(tabName)
-      {
-        let i, elements;
-
-        elements = document.getElementsByClassName("tab-content");
-        for (i = 0; i < elements.length; i++) {
-          elements[i].style.display = "none";
-          if (elements[i].classList.contains(tabName))
-            elements[i].style.display = "block";
-        }
-
-        elements = document.getElementsByClassName("tab-links");
-        for (i = 0; i < elements.length; i++) {
-          elements[i].className = elements[i].className.replace(" active", "");
-          if (elements[i].classList.contains(tabName))
-            elements[i].className += " active";
-        }
-
-        if (tabName === 'about') {
-          document.body.style.backgroundColor = "#902432";
-        }
-        if (tabName === 'the-book') {
-          document.body.style.backgroundColor = "#886060";
-        }
-        if (tabName === 'e-side') {
-          document.body.style.backgroundColor = "#BD3D42";
-        }
-        if (tabName === 'the-book-2') {
-          document.body.style.backgroundColor = "#507254";
-        }
-        if (tabName === 'e-side-2') {
-          document.body.style.backgroundColor = "#4F48DF";
-        }
-        if (tabName === 'the-book-3') {
-          document.body.style.backgroundColor = "#716E2C";
-        }
-        if (tabName === 'calculator') {
-          document.body.style.backgroundColor = "#902432";
-        }
-        if (tabName === 'biri-biri') {
-          document.body.style.backgroundColor = "#826709";
-        }
-
-        updateRomaji();
-      }
-
-      function toggleRomaji() {
-        useRomaji = !useRomaji;
-        updateRomaji();
-      }
-
-      function openLyricsTab(songName) {
-        window.open("https://genius.com/yoasobi-" + songName + "-lyrics");
-      }
-
-      document.getElementById("default-tab").click();
-    </script>
-
-    <script src="https://open.spotify.com/embed/iframe-api/v1" async>
-    </script>
     <script type="text/javascript">
       window.onSpotifyIframeApiReady = (IFrameAPI) => {
-        const element = document.getElementById('embed-iframe');
-        const options = {
+        let i, elements, options;
+
+        elements = document.getElementsByClassName('embed-iframe');
+        options = {
           width: '100%',
           uri: 'spotify:artist:64tJ2EAv1R6UaZqc4iOCyj'
         };
@@ -1022,7 +999,9 @@
                     });
                   })
         };
-        IFrameAPI.createController(element, options, callback);
+
+        for (i = 0; i < elements.length; i++)
+          IFrameAPI.createController(elements[i], options, callback);
       };
     </script>
   </body>

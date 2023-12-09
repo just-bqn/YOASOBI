@@ -1,0 +1,37 @@
+.nav-bar {
+    position: fixed;
+    left: 10%;
+    width: 80%;
+    overflow: hidden;
+    background-color: lightslategray;
+}
+
+.nav-bar button {
+    background-color: lightslategray;
+    color: darkslategrey;
+    font-family: Gotham;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+.nav-bar button:hover {
+    background-color: slategray;
+}
+
+.nav-bar button:focus {
+    background-color: slategray;
+}
+
+.tab-content {
+    padding: 5%;
+    animation: fadeEffect 0.5s;
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}

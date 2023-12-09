@@ -1,0 +1,63 @@
+.album-table table {
+    table-layout: fixed;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.album-table table tr {
+    height: 28px;
+    overflow: auto;
+}
+
+.album-table table tr td:nth-child(2) {
+    text-align: left;
+    width: 70%;
+}
+
+.the-book {
+    background-color: #886060;
+}
+
+.the-book tbody tr:nth-child(odd) {
+    background-color: #976B6B;
+}
+
+.e-side {
+    background-color: #BD3D42;
+}
+
+.e-side tbody tr:nth-child(odd) {
+    background-color: #D2444A;
+}
+
+.the-book-2 {
+    background-color: #507254;
+}
+
+.the-book-2 tbody tr:nth-child(odd) {
+    background-color: #597F5E;
+}
+
+.e-side-2 {
+    background-color: #4F48DF;
+}
+
+.e-side-2 tbody tr:nth-child(odd) {
+    background-color: #5850F8;
+}
+
+.the-book-3 {
+    background-color: #716E2C;
+}
+
+.the-book-3 tbody tr:nth-child(odd) {
+    background-color: #7E7A31;
+}
+
+.biri-biri {
+    background-color: #826709;
+}
+
+.biri-biri tbody tr:nth-child(odd) {
+    background-color: #91730A;
+}
