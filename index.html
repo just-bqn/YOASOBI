@@ -11,862 +11,913 @@
     <script src="https://open.spotify.com/embed/iframe-api/v1" async></script>
 
     <div class="tab">
-      <button class="tabLinks" onclick="openTab(event, 'about')" id="default-tab">About</button>
-      <button class="tabLinks" onclick="openTab(event, 'the-book')">THE BOOK</button>
-      <button class="tabLinks" onclick="openTab(event, 'e-side')">E-SIDE</button>
-      <button class="tabLinks" onclick="openTab(event, 'the-book-2')">THE BOOK 2</button>
-      <button class="tabLinks" onclick="openTab(event, 'e-side-2')">E-SIDE 2</button>
-      <button class="tabLinks" onclick="openTab(event, 'the-book-3')">THE BOOK 3</button>
-      <button class="tabLinks" onclick="openTab(event, 'calculator')">Calculator</button>
+      <button class="tab-links" onclick="openTab('about')" id="default-tab">About</button>
+      <button class="tab-links" onclick="openTab('the-book')">THE BOOK</button>
+      <button class="tab-links" onclick="openTab('e-side')">E-SIDE</button>
+      <button class="tab-links" onclick="openTab('the-book-2')">THE BOOK 2</button>
+      <button class="tab-links" onclick="openTab('e-side-2')">E-SIDE 2</button>
+      <button class="tab-links" onclick="openTab('the-book-3')">THE BOOK 3</button>
+      <button class="tab-links" onclick="openTab('calculator')">Calculator</button>
+      <button class="tab-links" onclick="openTab('biri-biri')">Biri-Biri</button>
     </div>
 
-    <div class="main">
-      <div class="column left">
-        <div id="about" class="tabContent about">
-          <h1>Who is YOASOBI?</h1>
-          <p>
-            YOASOBI is a J-Pop duo, formed in 2019, composed of Vocaloid producer Ayase and singer-songwriter Ikura.
-            With the slogan "Novel into music", the group has released numerous original songs, based on short stories and light novels.
-          </p>
+    <div class="content">
+      <div class="main">
+        <div class="left">
+          <div class="tab-content about">
+            <h1>Who is YOASOBI?</h1>
+            <p>
+              YOASOBI is a J-Pop duo, formed in 2019, composed of Vocaloid producer Ayase and singer-songwriter Ikura.
+              With the slogan "Novel into music", the group has released numerous original songs, based on short stories and light novels.
+            </p>
 
-          <h1>What is this website?</h1>
-          <p>
-            This website was created as a small fan project by me, <a href="https://codeforces.com/profile/_bqn">_bqn</a>.
-            Here, you can discover the discography of YOASOBI, including <a href="https://open.spotify.com/artist/64tJ2EAv1R6UaZqc4iOCyj">Spotify</a> and <a href="https://youtube.com/@Ayase_YOASOBI">YouTube</a> links to all of their releases, as well as the lyrics from <a href="https://genius.com">Genius</a>.
-          </p>
+            <h1>What is this website?</h1>
+            <p>
+              This website was created as a small fan project by me, <a href="https://codeforces.com/profile/_bqn" target="_blank">_bqn</a>.
+              Here, you can discover the discography of YOASOBI, including <a href="https://open.spotify.com/artist/64tJ2EAv1R6UaZqc4iOCyj" target="_blank">Spotify</a> and <a href="https://youtube.com/@Ayase_YOASOBI" target="_blank">YouTube</a> links to all of their releases, as well as the lyrics from <a href="https://genius.com" target="_blank">Genius</a>.
+              <br>
+              There's also a calculator tab, and a Pokémon minigame on the Biri-Biri tab!
+            </p>
 
-          <button class="click-here" data-spotify-id="spotify:artist:64tJ2EAv1R6UaZqc4iOCyj">
-            Click here to preview YOASOBI on Spotify!
-          </button>
+            <button class="click-here" data-spotify-id="spotify:artist:64tJ2EAv1R6UaZqc4iOCyj">
+              Click here to preview YOASOBI on Spotify!
+            </button>
+          </div>
+
+          <div class="tab-content the-book">
+            <h1>THE BOOK</h1>
+
+            <div class="album-table jap">
+              <table>
+                <thead>
+                <tr>
+                  <th>No.</th>
+                  <th>Title</th>
+                  <th>Lyrics</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                  <td>1.</td>
+                  <td>Epilogue</td>
+                  <td>
+                    <button onclick="openLyricsTab('epilogue');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2.</td>
+                  <td>アンコール</td>
+                  <td>
+                    <button onclick="openLyricsTab('encore');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3.</td>
+                  <td>ハルジオン</td>
+                  <td>
+                    <button onclick="openLyricsTab('harujion');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>4.</td>
+                  <td>あの夢をなぞって</td>
+                  <td>
+                    <button onclick="openLyricsTab('ano-yume-wo-nazotte');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>5.</td>
+                  <td>たぶん</td>
+                  <td>
+                    <button onclick="openLyricsTab('tabun');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>6.</td>
+                  <td>群青</td>
+                  <td>
+                    <button onclick="openLyricsTab('gunjou');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>7.</td>
+                  <td>ハルカ</td>
+                  <td>
+                    <button onclick="openLyricsTab('haruka');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>8.</td>
+                  <td>夜に駆ける</td>
+                  <td>
+                    <button onclick="openLyricsTab('yoru-ni-kakeru');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>9.</td>
+                  <td>Prologue</td>
+                  <td>
+                    <button onclick="openLyricsTab('prologue');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="album-table rom">
+              <table>
+                <thead>
+                <tr>
+                  <th>No.</th>
+                  <th>Title</th>
+                  <th>Lyrics</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                  <td>1.</td>
+                  <td>Epilogue</td>
+                  <td>
+                    <button onclick="openLyricsTab('epilogue');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2.</td>
+                  <td>Encore</td>
+                  <td>
+                    <button onclick="openLyricsTab('encore');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3.</td>
+                  <td>Halzion</td>
+                  <td>
+                    <button onclick="openLyricsTab('harujion');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>4.</td>
+                  <td>Ano Yume o Nazotte</td>
+                  <td>
+                    <button onclick="openLyricsTab('ano-yume-o-nazotte');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>5.</td>
+                  <td>Tabun</td>
+                  <td>
+                    <button onclick="openLyricsTab('tabun');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>6.</td>
+                  <td>Gunjou</td>
+                  <td>
+                    <button onclick="openLyricsTab('gunjou');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>7.</td>
+                  <td>Haruka</td>
+                  <td>
+                    <button onclick="openLyricsTab('haruka');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>8.</td>
+                  <td>Yoru ni Kakeru</td>
+                  <td>
+                    <button onclick="openLyricsTab('yoru-ni-kakeru');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>9.</td>
+                  <td>Prologue</td>
+                  <td>
+                    <button onclick="openLyricsTab('prologue');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <button class="click-here" data-spotify-id="spotify:album:1xhO0GSoezdPJcSuNe1ySv">
+              Click here to preview this album on Spotify!
+            </button>
+          </div>
+
+          <div class="tab-content e-side">
+            <h1>E-SIDE</h1>
+
+            <div class="album-table">
+              <table>
+                <thead>
+                <tr>
+                  <th>No.</th>
+                  <th>Title</th>
+                  <th>Lyrics</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                  <td>1.</td>
+                  <td>Into the Night</td>
+                  <td>
+                    <button onclick="openLyricsTab('into-the-night-english-version');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2.</td>
+                  <td>Haven't</td>
+                  <td>
+                    <button onclick="openLyricsTab('havent-english-version');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3.</td>
+                  <td>Monster</td>
+                  <td>
+                    <button onclick="openLyricsTab('monster-english-version');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>4.</td>
+                  <td>Comet</td>
+                  <td>
+                    <button onclick="openLyricsTab('comet-english-version');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>5.</td>
+                  <td>RGB</td>
+                  <td>
+                    <button onclick="openLyricsTab('rgb-english-version');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>6.</td>
+                  <td>Encore</td>
+                  <td>
+                    <button onclick="openLyricsTab('encore-english-version');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>7.</td>
+                  <td>Blue</td>
+                  <td>
+                    <button onclick="openLyricsTab('blue-english-version');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>8.</td>
+                  <td>Tracing a Dream</td>
+                  <td>
+                    <button onclick="openLyricsTab('tracing-a-dream-english-version');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <button class="click-here" data-spotify-id="spotify:album:2Il38p3xyKeLHM5tHa4b6R">
+              Click here to preview this album on Spotify!
+            </button>
+          </div>
+
+          <div class="tab-content the-book-2">
+            <h1>THE BOOK 2</h1>
+
+            <div class="album-table jap">
+              <table>
+                <thead>
+                <tr>
+                  <th>No.</th>
+                  <th>Title</th>
+                  <th>Lyrics</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                  <td>1.</td>
+                  <td>ツバメ (feat. ミドリーズ)</td>
+                  <td>
+                    <button onclick="openLyricsTab('tsubame');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2.</td>
+                  <td>三原色</td>
+                  <td>
+                    <button onclick="openLyricsTab('sangenshoku');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3.</td>
+                  <td>大正浪漫</td>
+                  <td>
+                    <button onclick="openLyricsTab('romance');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>4.</td>
+                  <td>もう少しだけ</td>
+                  <td>
+                    <button onclick="openLyricsTab('mou-sukoshi-dake');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>5.</td>
+                  <td>優しい彗星</td>
+                  <td>
+                    <button onclick="openLyricsTab('yasashii-suisei');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>6.</td>
+                  <td>怪物</td>
+                  <td>
+                    <button onclick="openLyricsTab('kaibutsu');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>7.</td>
+                  <td>もしも命が描けたら</td>
+                  <td>
+                    <button onclick="openLyricsTab('moshimo-inochiga-egaketara');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>8.</td>
+                  <td>ラブレター</td>
+                  <td>
+                    <button onclick="openLyricsTab('love-letter');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="album-table rom">
+              <table>
+                <thead>
+                <tr>
+                  <th>No.</th>
+                  <th>Title</th>
+                  <th>Lyrics</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                  <td>1.</td>
+                  <td>Tsubame (feat. Midories)</td>
+                  <td>
+                    <button onclick="openLyricsTab('tsubame');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2.</td>
+                  <td>Sangenshoku</td>
+                  <td>
+                    <button onclick="openLyricsTab('sangenshoku');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3.</td>
+                  <td>Taishou Roman</td>
+                  <td>
+                    <button onclick="openLyricsTab('romance');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>4.</td>
+                  <td>Mou Sukoshi Dake</td>
+                  <td>
+                    <button onclick="openLyricsTab('mou-sukoshi-dake');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>5.</td>
+                  <td>Yasashii Suisei</td>
+                  <td>
+                    <button onclick="openLyricsTab('yasashii-suisei');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>6.</td>
+                  <td>Kaibutsu</td>
+                  <td>
+                    <button onclick="openLyricsTab('kaibutsu');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>7.</td>
+                  <td>Moshi mo Inochi ga Egaketara</td>
+                  <td>
+                    <button onclick="openLyricsTab('moshimo-inochiga-egaketara');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>8.</td>
+                  <td>Love Letter</td>
+                  <td>
+                    <button onclick="openLyricsTab('love-letter');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <button class="click-here" data-spotify-id="spotify:album:5uStDUB4nlmItpz2AYlFtd">
+              Click here to preview this album on Spotify!
+            </button>
+          </div>
+
+          <div class="tab-content e-side-2">
+            <h1>E-SIDE 2</h1>
+
+            <div class="album-table">
+              <table>
+                <thead>
+                <tr>
+                  <th>No.</th>
+                  <th>Title</th>
+                  <th>Lyrics</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                  <td>1.</td>
+                  <td>The Blessing</td>
+                  <td>
+                    <button onclick="openLyricsTab('the-blessing-english-version');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2.</td>
+                  <td>If I Could Draw Life</td>
+                  <td>
+                    <button onclick="openLyricsTab('if-i-could-draw-life-english-version');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3.</td>
+                  <td>Romance</td>
+                  <td>
+                    <button onclick="openLyricsTab('romance-english-version');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>4.</td>
+                  <td>The Swallow (feat. Midories)</td>
+                  <td>
+                    <button onclick="openLyricsTab('the-swallow-english-version');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>5.</td>
+                  <td>Halzion</td>
+                  <td>
+                    <button onclick="openLyricsTab('halzion-english-version');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>6.</td>
+                  <td>Just a Little Step</td>
+                  <td>
+                    <button onclick="openLyricsTab('just-a-little-step-english-version');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>7.</td>
+                  <td>Haruka</td>
+                  <td>
+                    <button onclick="openLyricsTab('haruka-english-version');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>8.</td>
+                  <td>Love Letter</td>
+                  <td>
+                    <button onclick="openLyricsTab('love-letter-english-version');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <button class="click-here" data-spotify-id="spotify:album:0ojhCKa6vLf8p81CNJ7ctO">
+              Click here to preview this album on Spotify!
+            </button>
+          </div>
+
+          <div class="tab-content the-book-3">
+            <h1>THE BOOK 3</h1>
+
+            <div class="album-table jap">
+              <table>
+                <thead>
+                <tr>
+                  <th>No.</th>
+                  <th>Title</th>
+                  <th>Lyrics</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                  <td>1.</td>
+                  <td>勇者</td>
+                  <td>
+                    <button onclick="openLyricsTab('yuusha');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2.</td>
+                  <td>Interlude: Awakening</td>
+                  <td>
+                    <button onclick="openLyricsTab('interlude-awakening');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3.</td>
+                  <td>祝福</td>
+                  <td>
+                    <button onclick="openLyricsTab('shukufuku');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>4.</td>
+                  <td>海のまにまに</td>
+                  <td>
+                    <button onclick="openLyricsTab('umi-no-manimani');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>5.</td>
+                  <td>ミスター</td>
+                  <td>
+                    <button onclick="openLyricsTab('mr');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>6.</td>
+                  <td>Interlude: Worship</td>
+                  <td>
+                    <button onclick="openLyricsTab('interlude-worship');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>7.</td>
+                  <td>アイドル</td>
+                  <td>
+                    <button onclick="openLyricsTab('idol');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>8.</td>
+                  <td>セブンティーン</td>
+                  <td>
+                    <button onclick="openLyricsTab('seventeen');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>9.</td>
+                  <td>アドベンチャー</td>
+                  <td>
+                    <button onclick="openLyricsTab('adventure');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>10.</td>
+                  <td>好きだ</td>
+                  <td>
+                    <button onclick="openLyricsTab('sukida');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="album-table rom">
+              <table>
+                <thead>
+                <tr>
+                  <th>No.</th>
+                  <th>Title</th>
+                  <th>Lyrics</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                  <td>1.</td>
+                  <td>Yuusha</td>
+                  <td>
+                    <button onclick="openLyricsTab('yuusha');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2.</td>
+                  <td>Interlude: Awakening</td>
+                  <td>
+                    <button onclick="openLyricsTab('interlude-awakening');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3.</td>
+                  <td>Shukufuku</td>
+                  <td>
+                    <button onclick="openLyricsTab('shukufuku');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>4.</td>
+                  <td>Umi no Manimani</td>
+                  <td>
+                    <button onclick="openLyricsTab('umi-no-manimani');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>5.</td>
+                  <td>Mr.</td>
+                  <td>
+                    <button onclick="openLyricsTab('mr');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>6.</td>
+                  <td>Interlude: Worship</td>
+                  <td>
+                    <button onclick="openLyricsTab('interlude-worship');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>7.</td>
+                  <td>Idol</td>
+                  <td>
+                    <button onclick="openLyricsTab('idol');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>8.</td>
+                  <td>Seventeen</td>
+                  <td>
+                    <button onclick="openLyricsTab('seventeen');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>9.</td>
+                  <td>Adventure</td>
+                  <td>
+                    <button onclick="openLyricsTab('adventure');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>10.</td>
+                  <td>Suki da</td>
+                  <td>
+                    <button onclick="openLyricsTab('sukida');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <button class="click-here" data-spotify-id="spotify:album:68w73FF3dYC6C3RWdcV0Yl">
+              Click here to preview this album on Spotify!
+            </button>
+          </div>
+
+          <div class="tab-content calculator">
+            <h1>What is this tab?</h1>
+            <p>
+              This is a simple calculator, with support for basic arithmetic operations over 64-bit signed integers, including addition, subtraction, multiplication, integer division and modulus.
+              You can enter input with either your keyboard or on-screen buttons.
+            </p>
+
+            <h1>Why is this tab here?</h1>
+            <p>
+              I don't know. Perhaps you'd like to calculate how much you have spent on YOASOBI albums?
+            </p>
+
+            <div class="calculator-table">
+              <table>
+                <tbody>
+                <tr>
+                  <td><button class="square-button">1</button></td>
+                  <td><button class="square-button">2</button></td>
+                  <td><button class="square-button">3</button></td>
+                </tr>
+                <tr>
+                  <td><button class="square-button">4</button></td>
+                  <td><button class="square-button">5</button></td>
+                  <td><button class="square-button">6</button></td>
+                </tr>
+                <tr>
+                  <td><button class="square-button">7</button></td>
+                  <td><button class="square-button">8</button></td>
+                  <td><button class="square-button">9</button></td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="tab-content biri-biri">
+            <h1>Biri-Biri</h1>
+
+            <div class="album-table">
+              <table>
+                <thead>
+                <tr>
+                  <th>No.</th>
+                  <th>Title</th>
+                  <th>Lyrics</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                  <td>1.</td>
+                  <td>Biri-Biri</td>
+                  <td>
+                    <button onclick="openLyricsTab('biri-biri');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>2.</td>
+                  <td>Biri-Biri - English Version</td>
+                  <td>
+                    <button onclick="openLyricsTab('biri-biri-english-version');" class="click-here">
+                      Click here!
+                    </button>
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <button class="click-here" data-spotify-id="spotify:album:1hxB0L2PCz5d5jQl2s39Sz">
+              Click here to preview this single on Spotify!
+            </button>
+          </div>
         </div>
 
-        <div id="the-book" class="tabContent the-book">
-          <h1>THE BOOK</h1>
-
-          <div class="album-table jap">
-            <table>
-              <thead>
-              <tr>
-                <th>No.</th>
-                <th>Title</th>
-                <th>Lyrics</th>
-              </tr>
-              </thead>
-
-              <tbody>
-              <tr>
-                <td>1.</td>
-                <td>Epilogue</td>
-                <td>
-                  <a onclick="openLyricsTab('epilogue');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>2.</td>
-                <td>アンコール</td>
-                <td>
-                  <a onclick="openLyricsTab('encore');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>3.</td>
-                <td>ハルジオン</td>
-                <td>
-                  <a onclick="openLyricsTab('harujion');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>4.</td>
-                <td>あの夢をなぞって</td>
-                <td>
-                  <a onclick="openLyricsTab('ano-yume-wo-nazotte');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>5.</td>
-                <td>たぶん</td>
-                <td>
-                  <a onclick="openLyricsTab('tabun');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>6.</td>
-                <td>群青</td>
-                <td>
-                  <a onclick="openLyricsTab('gunjou');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>7.</td>
-                <td>ハルカ</td>
-                <td>
-                  <a onclick="openLyricsTab('haruka');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>8.</td>
-                <td>夜に駆ける</td>
-                <td>
-                  <a onclick="openLyricsTab('yoru-ni-kakeru');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>9.</td>
-                <td>Prologue</td>
-                <td>
-                  <a onclick="openLyricsTab('prologue');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div class="album-table rom">
-            <table>
-              <thead>
-              <tr>
-                <th>No.</th>
-                <th>Title</th>
-                <th>Lyrics</th>
-              </tr>
-              </thead>
-
-              <tbody>
-              <tr>
-                <td>1.</td>
-                <td>Epilogue</td>
-                <td>
-                  <a onclick="openLyricsTab('epilogue');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>2.</td>
-                <td>Encore</td>
-                <td>
-                  <a onclick="openLyricsTab('encore');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>3.</td>
-                <td>Halzion</td>
-                <td>
-                  <a onclick="openLyricsTab('harujion');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>4.</td>
-                <td>Ano Yume o Nazotte</td>
-                <td>
-                  <a onclick="openLyricsTab('ano-yume-o-nazotte');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>5.</td>
-                <td>Tabun</td>
-                <td>
-                  <a onclick="openLyricsTab('tabun');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>6.</td>
-                <td>Gunjou</td>
-                <td>
-                  <a onclick="openLyricsTab('gunjou');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>7.</td>
-                <td>Haruka</td>
-                <td>
-                  <a onclick="openLyricsTab('haruka');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>8.</td>
-                <td>Yoru ni Kakeru</td>
-                <td>
-                  <a onclick="openLyricsTab('yoru-ni-kakeru');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>9.</td>
-                <td>Prologue</td>
-                <td>
-                  <a onclick="openLyricsTab('prologue');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <button class="click-here" data-spotify-id="spotify:album:1xhO0GSoezdPJcSuNe1ySv">
-            Click here to preview this album on Spotify!
-          </button>
-        </div>
-
-        <div id="e-side" class="tabContent e-side">
-          <h1>E-SIDE</h1>
-
-          <div class="album-table">
-            <table>
-              <thead>
-              <tr>
-                <th>No.</th>
-                <th>Title</th>
-                <th>Lyrics</th>
-              </tr>
-              </thead>
-
-              <tbody>
-              <tr>
-                <td>1.</td>
-                <td>Into the Night</td>
-                <td>
-                  <a onclick="openLyricsTab('into-the-night-english-version');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>2.</td>
-                <td>Haven't</td>
-                <td>
-                  <a onclick="openLyricsTab('havent-english-version');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>3.</td>
-                <td>Monster</td>
-                <td>
-                  <a onclick="openLyricsTab('monster-english-version');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>4.</td>
-                <td>Comet</td>
-                <td>
-                  <a onclick="openLyricsTab('comet-english-version');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>5.</td>
-                <td>RGB</td>
-                <td>
-                  <a onclick="openLyricsTab('rgb-english-version');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>6.</td>
-                <td>Encore</td>
-                <td>
-                  <a onclick="openLyricsTab('encore-english-version');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>7.</td>
-                <td>Blue</td>
-                <td>
-                  <a onclick="openLyricsTab('blue-english-version');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>8.</td>
-                <td>Tracing a Dream</td>
-                <td>
-                  <a onclick="openLyricsTab('tracing-a-dream-english-version');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <button class="click-here" data-spotify-id="spotify:album:2Il38p3xyKeLHM5tHa4b6R">
-            Click here to preview this album on Spotify!
-          </button>
-        </div>
-
-        <div id="the-book-2" class="tabContent the-book-2">
-          <h1>THE BOOK 2</h1>
-
-          <div class="album-table jap">
-            <table>
-              <thead>
-              <tr>
-                <th>No.</th>
-                <th>Title</th>
-                <th>Lyrics</th>
-              </tr>
-              </thead>
-
-              <tbody>
-              <tr>
-                <td>1.</td>
-                <td>ツバメ (feat. ミドリーズ)</td>
-                <td>
-                  <a onclick="openLyricsTab('tsubame');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>2.</td>
-                <td>三原色</td>
-                <td>
-                  <a onclick="openLyricsTab('sangenshoku');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>3.</td>
-                <td>大正浪漫</td>
-                <td>
-                  <a onclick="openLyricsTab('romance');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>4.</td>
-                <td>もう少しだけ</td>
-                <td>
-                  <a onclick="openLyricsTab('mou-sukoshi-dake');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>5.</td>
-                <td>優しい彗星</td>
-                <td>
-                  <a onclick="openLyricsTab('yasashii-suisei');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>6.</td>
-                <td>怪物</td>
-                <td>
-                  <a onclick="openLyricsTab('kaibutsu');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>7.</td>
-                <td>もしも命が描けたら</td>
-                <td>
-                  <a onclick="openLyricsTab('moshimo-inochiga-egaketara');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>8.</td>
-                <td>ラブレター</td>
-                <td>
-                  <a onclick="openLyricsTab('love-letter');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div class="album-table rom">
-            <table>
-              <thead>
-              <tr>
-                <th>No.</th>
-                <th>Title</th>
-                <th>Lyrics</th>
-              </tr>
-              </thead>
-
-              <tbody>
-              <tr>
-                <td>1.</td>
-                <td>Tsubame (feat. Midories)</td>
-                <td>
-                  <a onclick="openLyricsTab('tsubame');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>2.</td>
-                <td>Sangenshoku</td>
-                <td>
-                  <a onclick="openLyricsTab('sangenshoku');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>3.</td>
-                <td>Taishou Roman</td>
-                <td>
-                  <a onclick="openLyricsTab('romance');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>4.</td>
-                <td>Mou Sukoshi Dake</td>
-                <td>
-                  <a onclick="openLyricsTab('mou-sukoshi-dake');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>5.</td>
-                <td>Yasashii Suisei</td>
-                <td>
-                  <a onclick="openLyricsTab('yasashii-suisei');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>6.</td>
-                <td>Kaibutsu</td>
-                <td>
-                  <a onclick="openLyricsTab('kaibutsu');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>7.</td>
-                <td>Moshi mo Inochi ga Egaketara</td>
-                <td>
-                  <a onclick="openLyricsTab('moshimo-inochiga-egaketara');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>8.</td>
-                <td>Love Letter</td>
-                <td>
-                  <a onclick="openLyricsTab('love-letter');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <button class="click-here" data-spotify-id="spotify:album:5uStDUB4nlmItpz2AYlFtd">
-            Click here to preview this album on Spotify!
-          </button>
-        </div>
-
-        <div id="e-side-2" class="tabContent e-side-2">
-          <h1>E-SIDE 2</h1>
-
-          <div class="album-table">
-            <table>
-              <thead>
-              <tr>
-                <th>No.</th>
-                <th>Title</th>
-                <th>Lyrics</th>
-              </tr>
-              </thead>
-
-              <tbody>
-              <tr>
-                <td>1.</td>
-                <td>The Blessing</td>
-                <td>
-                  <a onclick="openLyricsTab('the-blessing-english-version');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>2.</td>
-                <td>If I Could Draw Life</td>
-                <td>
-                  <a onclick="openLyricsTab('if-i-could-draw-life-english-version');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>3.</td>
-                <td>Romance</td>
-                <td>
-                  <a onclick="openLyricsTab('romance-english-version');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>4.</td>
-                <td>The Swallow (feat. Midories)</td>
-                <td>
-                  <a onclick="openLyricsTab('the-swallow-english-version');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>5.</td>
-                <td>Halzion</td>
-                <td>
-                  <a onclick="openLyricsTab('halzion-english-version');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>6.</td>
-                <td>Just a Little Step</td>
-                <td>
-                  <a onclick="openLyricsTab('just-a-little-step-english-version');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>7.</td>
-                <td>Haruka</td>
-                <td>
-                  <a onclick="openLyricsTab('haruka-english-version');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>8.</td>
-                <td>Love Letter</td>
-                <td>
-                  <a onclick="openLyricsTab('love-letter-english-version');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <button class="click-here" data-spotify-id="spotify:album:0ojhCKa6vLf8p81CNJ7ctO">
-            Click here to preview this album on Spotify!
-          </button>
-        </div>
-
-        <div id="the-book-3" class="tabContent the-book-3">
-          <h1>THE BOOK 3</h1>
-
-          <div class="album-table jap">
-            <table>
-              <thead>
-              <tr>
-                <th>No.</th>
-                <th>Title</th>
-                <th>Lyrics</th>
-              </tr>
-              </thead>
-
-              <tbody>
-              <tr>
-                <td>1.</td>
-                <td>勇者</td>
-                <td>
-                  <a onclick="openLyricsTab('yuusha');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>2.</td>
-                <td>Interlude: Awakening</td>
-                <td>
-                  <a onclick="openLyricsTab('interlude-awakening');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>3.</td>
-                <td>祝福</td>
-                <td>
-                  <a onclick="openLyricsTab('shukufuku');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>4.</td>
-                <td>海のまにまに</td>
-                <td>
-                  <a onclick="openLyricsTab('umi-no-manimani');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>5.</td>
-                <td>ミスター</td>
-                <td>
-                  <a onclick="openLyricsTab('mr');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>6.</td>
-                <td>Interlude: Worship</td>
-                <td>
-                  <a onclick="openLyricsTab('interlude-worship');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>7.</td>
-                <td>アイドル</td>
-                <td>
-                  <a onclick="openLyricsTab('idol');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>8.</td>
-                <td>セブンティーン</td>
-                <td>
-                  <a onclick="openLyricsTab('seventeen');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>9.</td>
-                <td>アドベンチャー</td>
-                <td>
-                  <a onclick="openLyricsTab('adventure');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>10.</td>
-                <td>好きだ</td>
-                <td>
-                  <a onclick="openLyricsTab('sukida');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="album-table rom">
-            <table>
-              <thead>
-              <tr>
-                <th>No.</th>
-                <th>Title</th>
-                <th>Lyrics</th>
-              </tr>
-              </thead>
-
-              <tbody>
-              <tr>
-                <td>1.</td>
-                <td>Yuusha</td>
-                <td>
-                  <a onclick="openLyricsTab('yuusha');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>2.</td>
-                <td>Interlude: Awakening</td>
-                <td>
-                  <a onclick="openLyricsTab('interlude-awakening');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>3.</td>
-                <td>Shukufuku</td>
-                <td>
-                  <a onclick="openLyricsTab('shukufuku');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>4.</td>
-                <td>Umi no Manimani</td>
-                <td>
-                  <a onclick="openLyricsTab('umi-no-manimani');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>5.</td>
-                <td>Mr.</td>
-                <td>
-                  <a onclick="openLyricsTab('mr');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>6.</td>
-                <td>Interlude: Worship</td>
-                <td>
-                  <a onclick="openLyricsTab('interlude-worship');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>7.</td>
-                <td>Idol</td>
-                <td>
-                  <a onclick="openLyricsTab('idol');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>8.</td>
-                <td>Seventeen</td>
-                <td>
-                  <a onclick="openLyricsTab('seventeen');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>9.</td>
-                <td>Adventure</td>
-                <td>
-                  <a onclick="openLyricsTab('adventure');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>10.</td>
-                <td>Suki da</td>
-                <td>
-                  <a onclick="openLyricsTab('sukida');" class="click-here">
-                    Click here!
-                  </a>
-                </td>
-              </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <button class="click-here" data-spotify-id="spotify:album:68w73FF3dYC6C3RWdcV0Yl">
-            Click here to preview this album on Spotify!
-          </button>
-        </div>
-
-        <div id="calculator" class="tabContent calculator">
-          <h1>What is this tab?</h1>
-          <p>
-            This is a simple calculator, with support for basic arithmetic operations over 64-bit signed integers, including addition, subtraction, multiplication, integer division and modulus.
-            You can enter input with either your keyboard or on-screen buttons.
-          </p>
-
-          <h1>Why is this tab here?</h1>
-          <p>
-            I don't know. Perhaps you'd like to calculate how much you have spent on YOASOBI albums?
-          </p>
-
-          <div class="calculator-table">
-            <table>
-              <tbody>
-              <tr>
-                <td><button class="square-button">1</button></td>
-                <td><button class="square-button">2</button></td>
-                <td><button class="square-button">3</button></td>
-              </tr>
-              <tr>
-                <td><button class="square-button">4</button></td>
-                <td><button class="square-button">5</button></td>
-                <td><button class="square-button">6</button></td>
-              </tr>
-              <tr>
-                <td><button class="square-button">7</button></td>
-                <td><button class="square-button">8</button></td>
-                <td><button class="square-button">9</button></td>
-              </tr>
-              </tbody>
-            </table>
-          </div>
+        <div class="right">
+          <div id="embed-iframe"></div>
         </div>
       </div>
 
-      <div class="column right">
-        <div id="embed-iframe"></div>
+      <div class="tab-content biri-biri game-intro">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, adipisci consequuntur cupiditate deserunt dolor dolorem eaque earum eos excepturi exercitationem fugiat itaque laudantium libero magnam necessitatibus pariatur perferendis, possimus quas!
       </div>
     </div>
 
@@ -896,44 +947,48 @@
             romContent[i].style.display = "none";
         }
       }
-      function openTab(event, tabName)
+      function openTab(tabName)
       {
-        let i, elements, backgroundColour;
+        let i, elements;
 
-        elements = document.getElementsByClassName("tabContent");
-        for (i = 0; i < elements.length; i++)
+        elements = document.getElementsByClassName("tab-content");
+        for (i = 0; i < elements.length; i++) {
           elements[i].style.display = "none";
+          if (elements[i].classList.contains(tabName))
+            elements[i].style.display = "block";
+        }
 
-        elements = document.getElementsByClassName("tabLinks");
-        for (i = 0; i < elements.length; i++)
+        elements = document.getElementsByClassName("tab-links");
+        for (i = 0; i < elements.length; i++) {
           elements[i].className = elements[i].className.replace(" active", "");
-
-        document.getElementById(tabName).style.display = "block";
-        event.currentTarget.className += " active";
+          if (elements[i].classList.contains(tabName))
+            elements[i].className += " active";
+        }
 
         if (tabName === 'about') {
-          backgroundColour = "#902432";
+          document.body.style.backgroundColor = "#902432";
         }
         if (tabName === 'the-book') {
-          backgroundColour = "#886060";
+          document.body.style.backgroundColor = "#886060";
         }
         if (tabName === 'e-side') {
-          backgroundColour = "#BD3D42";
+          document.body.style.backgroundColor = "#BD3D42";
         }
         if (tabName === 'the-book-2') {
-          backgroundColour = "#507254";
+          document.body.style.backgroundColor = "#507254";
         }
         if (tabName === 'e-side-2') {
-          backgroundColour = "#4F48DF";
+          document.body.style.backgroundColor = "#4F48DF";
         }
         if (tabName === 'the-book-3') {
-          backgroundColour = "#716E2C";
+          document.body.style.backgroundColor = "#716E2C";
         }
         if (tabName === 'calculator') {
-          backgroundColour = "#902432";
+          document.body.style.backgroundColor = "#902432";
         }
-
-        document.body.style.backgroundColor = backgroundColour;
+        if (tabName === 'biri-biri') {
+          document.body.style.backgroundColor = "#826709";
+        }
 
         updateRomaji();
       }

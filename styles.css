@@ -1,21 +1,7 @@
 @font-face {
     font-family: 'Gotham';
-    src: url('fonts/GothamBold.ttf');
-    font-weight: 700;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Gotham';
     src: url('fonts/GothamMedium.ttf');
     font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Gotham';
-    src: url('fonts/GothamLight.ttf');
-    font-weight: 300;
     font-style: normal;
 }
 
@@ -26,13 +12,12 @@ html {
 
 .tab {
     overflow: hidden;
-    border: 1px solid #8A9FB7;
-    background-color: #8A9FB7;
+    background-color: lightslategray;
 }
 
 .tab button {
-    background-color: #8A9FB7;
-    color: #172D4F;
+    background-color: lightslategray;
+    color: darkslategrey;
     font-family: Gotham;
     float: left;
     border: none;
@@ -43,14 +28,14 @@ html {
 }
 
 .tab button:hover {
-    background-color: #468FA7;
+    background-color: slategray;
 }
 
-.tab button.active {
-    background-color: #468FA7;
+.tab button:focus {
+    background-color: slategray;
 }
 
-.tabContent {
+.tab-content {
     padding: 5%;
     animation: fadeEffect 0.5s;
 }
@@ -61,30 +46,30 @@ html {
 }
 
 a:link {
-    color: lightblue;
+    color: lightslategray;
     background-color: transparent;
     text-decoration: none;
 }
 
 a:visited {
-    color: lightblue;
+    color: lightslategray;
     background-color: transparent;
     text-decoration: none;
 }
 
 a:hover {
-    color: dodgerblue;
+    color: slategray;
     background-color: transparent;
     text-decoration: underline;
 }
 
 a:active {
-    color: dodgerblue;
+    color: slategray;
     background-color: transparent;
     text-decoration: underline;
 }
 
-.main {
+.content {
     padding: 5% 15%;
 }
 
@@ -120,7 +105,7 @@ a:active {
 
 .click-here {
     background-color: Transparent;
-    color: lightblue;
+    color: lightsalmon;
     background-repeat: no-repeat;
     border: none;
     cursor: pointer;
@@ -168,6 +153,14 @@ a:active {
 
 .the-book-3 tbody tr:nth-child(odd) {
     background-color: #7E7A31;
+}
+
+.biri-biri {
+    background-color: #826709;
+}
+
+.biri-biri tbody tr:nth-child(odd) {
+    background-color: #91730A;
 }
 
 .calculator-table {
