@@ -21,8 +21,8 @@
       <button class="tab-links" onclick="openTab('the-book-2')">THE BOOK 2</button>
       <button class="tab-links" onclick="openTab('e-side-2')">E-SIDE 2</button>
       <button class="tab-links" onclick="openTab('the-book-3')">THE BOOK 3</button>
-      <button class="tab-links" onclick="openTab('calculator')">Calculator</button>
       <button class="tab-links" onclick="openTab('biri-biri')">Biri-Biri</button>
+      <button class="tab-links" onclick="openTab('calculator')">Calculator</button>
     </div>
 
     <div class="content">
@@ -38,9 +38,8 @@
             <h1>What is this website?</h1>
             <p>
               This website was created as a small fan project by me, <a href="https://codeforces.com/profile/_bqn" target="_blank">_bqn</a>.
-              Here, you can discover the discography of YOASOBI, including <a href="https://open.spotify.com/artist/64tJ2EAv1R6UaZqc4iOCyj" target="_blank">Spotify</a> and <a href="https://youtube.com/@Ayase_YOASOBI" target="_blank">YouTube</a> links to all of their releases, as well as the lyrics from <a href="https://genius.com" target="_blank">Genius</a>.
-              <br>
-              There's also a calculator tab, and a Pokémon minigame on the Biri-Biri tab!
+              Here, you can discover the discography of YOASOBI, including <a href="https://open.spotify.com/artist/64tJ2EAv1R6UaZqc4iOCyj" target="_blank">Spotify</a> links to all of their releases, as well as the lyrics from <a href="https://genius.com" target="_blank">Genius</a>.
+              There's also a calculator tab!
             </p>
 
             <button class="click-here" data-spotify-id="spotify:artist:64tJ2EAv1R6UaZqc4iOCyj">
@@ -837,92 +836,6 @@
             </button>
           </div>
 
-          <div class="tab-content calculator">
-            <h1>What is this tab?</h1>
-            <p>
-              This is a simple calculator.
-              You can enter input with either your keyboard or on-screen buttons.
-              The expression is parsed with <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval" target="_blank">eval()</a>.
-
-            <table class="calculator-keyboard-mapping-table">
-                <tbody>
-                  <tr>
-                    <th>Keyboard</th>
-                    <td>2</td>
-                    <td>&ast;</td>
-                    <td>&sol;</td>
-                    <td>&ast;&ast;</td>
-                    <td>Enter</td>
-                    <td>Backspace</td>
-                    <td>Delete</td>
-                  </tr>
-                  <tr>
-                    <th>Parsed as</th>
-                    <td>2</td>
-                    <td>&times;</td>
-                    <td>&divide;</td>
-                    <td>pow()</td>
-                    <td>=</td>
-                    <td>C</td>
-                    <td>AC</td>
-                  </tr>
-                </tbody>
-              </table>
-            </p>
-
-            Don't ask me why this tab is here, maybe you'd need to calculate how much you've spent on YOASOBI albums?
-
-            <br><br><br>
-
-            <div class="calculator-wrapper">
-              <div class="calculator-">
-                  <div class="calculator-screen">
-                    <div class="calculator-input">&nbsp;</div>
-                    <div class="calculator-output">&nbsp;</div>
-                  </div>
-
-                <div class="calculator-buttons">
-                  <div class="calculator-buttons-rows-wrapper">
-                    <div class="calculator-buttons-row">
-                      <button class="calculator-button" onclick="processInput('ac')">AC</button>
-                      <button class="calculator-button" onclick="processInput('c')">C</button>
-                      <button class="calculator-button" onclick="processInput('.')">&period;</button>
-                      <button class="calculator-button" onclick="processInput('/')">&divide;</button>
-                    </div>
-
-                    <div class="calculator-buttons-row">
-                      <button class="calculator-button" onclick="processInput('7')">7</button>
-                      <button class="calculator-button" onclick="processInput('8')">8</button>
-                      <button class="calculator-button" onclick="processInput('9')">9</button>
-                      <button class="calculator-button" onclick="processInput('*')">&times;</button>
-                    </div>
-
-                    <div class="calculator-buttons-row">
-                      <button class="calculator-button" onclick="processInput('4')">4</button>
-                      <button class="calculator-button" onclick="processInput('5')">5</button>
-                      <button class="calculator-button" onclick="processInput('6')">6</button>
-                      <button class="calculator-button" onclick="processInput('-')">&minus;</button>
-                    </div>
-
-                    <div class="calculator-buttons-row">
-                      <button class="calculator-button" onclick="processInput('1')">1</button>
-                      <button class="calculator-button" onclick="processInput('2')">2</button>
-                      <button class="calculator-button" onclick="processInput('3')">3</button>
-                      <button class="calculator-button" onclick="processInput('+')">&plus;</button>
-                    </div>
-
-                    <div class="calculator-buttons-row">
-                      <button class="calculator-button" onclick="processInput('(')">&lpar;</button>
-                      <button class="calculator-button" onclick="processInput('0')">0</button>
-                      <button class="calculator-button" onclick="processInput(')')">&rpar;</button>
-                      <button class="calculator-button" onclick="processInput('=')">&equals;</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
           <div class="tab-content biri-biri">
             <h1>Biri-Biri</h1>
 
@@ -964,15 +877,95 @@
               Click here to preview this single on Spotify!
             </button>
           </div>
+
+          <div class="tab-content calculator">
+            <h1>What is this tab?</h1>
+            <p>
+              This is a simple calculator.
+              You can enter input with either your keyboard or on-screen buttons.
+              The expression will be parsed with <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval" target="_blank">eval()</a>.
+            </p>
+
+            <table class="calculator-keyboard-mapping-table">
+              <tbody>
+                <tr>
+                  <th>Keyboard</th>
+                  <td>2</td>
+                  <td>&ast;</td>
+                  <td>&sol;</td>
+                  <td>&ast;&ast;</td>
+                  <td>Enter</td>
+                  <td>Backspace</td>
+                  <td>Delete</td>
+                </tr>
+                <tr>
+                  <th>Parsed as</th>
+                  <td>2</td>
+                  <td>&times;</td>
+                  <td>&divide;</td>
+                  <td>&uarr;</td>
+                  <td>=</td>
+                  <td>C</td>
+                  <td>AC</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <br>
+
+            Don't ask me why this tab is here, maybe you'd need to calculate how much you've spent on YOASOBI albums?
+
+            <br><br><br>
+
+            <div class="calculator-wrapper">
+              <div class="calculator-screen">
+                <div class="calculator-input">&nbsp;</div>
+                <div class="calculator-output">&nbsp;</div>
+              </div>
+
+              <div class="calculator-buttons">
+                <div class="calculator-buttons-row">
+                  <button class="calculator-button" onclick="processInput('ac')">AC</button>
+                  <button class="calculator-button" onclick="processInput('c')">C</button>
+                  <button class="calculator-button" onclick="processInput('.')">&period;</button>
+                  <button class="calculator-button" onclick="processInput('/')">&divide;</button>
+                </div>
+
+                <div class="calculator-buttons-row">
+                  <button class="calculator-button" onclick="processInput('7')">7</button>
+                  <button class="calculator-button" onclick="processInput('8')">8</button>
+                  <button class="calculator-button" onclick="processInput('9')">9</button>
+                  <button class="calculator-button" onclick="processInput('*')">&times;</button>
+                </div>
+
+                <div class="calculator-buttons-row">
+                  <button class="calculator-button" onclick="processInput('4')">4</button>
+                  <button class="calculator-button" onclick="processInput('5')">5</button>
+                  <button class="calculator-button" onclick="processInput('6')">6</button>
+                  <button class="calculator-button" onclick="processInput('-')">&minus;</button>
+                </div>
+
+                <div class="calculator-buttons-row">
+                  <button class="calculator-button" onclick="processInput('1')">1</button>
+                  <button class="calculator-button" onclick="processInput('2')">2</button>
+                  <button class="calculator-button" onclick="processInput('3')">3</button>
+                  <button class="calculator-button" onclick="processInput('+')">&plus;</button>
+                </div>
+
+                <div class="calculator-buttons-row">
+                  <button class="calculator-button" onclick="processInput('(')">&lpar;</button>
+                  <button class="calculator-button" onclick="processInput('0')">0</button>
+                  <button class="calculator-button" onclick="processInput(')')">&rpar;</button>
+                  <button class="calculator-button" onclick="processInput('=')">&equals;</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="right">
           <div class="embed-iframe"></div>
         </div>
-      </div>
-
-      <div class="tab-content biri-biri game-intro">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, adipisci consequuntur cupiditate deserunt dolor dolorem eaque earum eos excepturi exercitationem fugiat itaque laudantium libero magnam necessitatibus pariatur perferendis, possimus quas!
       </div>
     </div>
 

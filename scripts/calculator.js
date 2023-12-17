@@ -12,11 +12,16 @@ function processInput(input) {
         expression = expression.slice(0, -1);
     }
     else if (input === "=") {
-        try {
-            value = eval(expression);
-        }
-        catch (SyntaxError) {
+        if (expression.includes('//')) {
             value = "Syntax Error!";
+        }
+        else {
+            try {
+                value = eval(expression);
+            }
+            catch (SyntaxError) {
+                value = "Syntax Error!";
+            }
         }
     }
     else
@@ -26,8 +31,12 @@ function processInput(input) {
     for (i = 0; i < elements.length; i++) {
         if (expression === "")
             elements[i].innerHTML = "&nbsp;";
-        else
-            elements[i].innerHTML = expression.replaceAll("*", "&times;").replaceAll("/", "&divide;");
+        else {
+            if (expression.includes("***"))
+                elements[i].innerHTML = expression.replaceAll("*", "&times;").replaceAll("/", "&divide;");
+            else
+                elements[i].innerHTML = expression.replaceAll("**", " &uarr; ").replaceAll("*", "&times;").replaceAll("/", "&divide;");
+        }
     }
 
     elements = document.getElementsByClassName("calculator-output");

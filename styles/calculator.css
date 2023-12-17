@@ -11,13 +11,8 @@
 }
 
 .calculator-wrapper {
-    display: flex;
-    justify-content: center;
-}
-
-.calculator-screen {
-    display: block;
-    justify-content: center;
+    padding: 0 20%;
+    margin: 0 auto;
 }
 
 .calculator-input {
@@ -38,10 +33,6 @@
     overflow: scroll;
     display: flex;
     flex-direction: row-reverse;
-}
-
-.calculator-buttons {
-
 }
 
 .calculator-buttons-row {

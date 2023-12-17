@@ -55,11 +55,11 @@ function openTab(tabName)
     if (tabName === 'the-book-3') {
         document.body.style.backgroundColor = "#716E2C";
     }
-    if (tabName === 'calculator') {
-        document.body.style.backgroundColor = "#902432";
-    }
     if (tabName === 'biri-biri') {
         document.body.style.backgroundColor = "#826709";
+    }
+    if (tabName === 'calculator') {
+        document.body.style.backgroundColor = "#902432";
     }
 
     updateRomaji();
