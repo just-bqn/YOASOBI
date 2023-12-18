@@ -16,20 +16,17 @@ html {
 
 .content {
     padding: 5% 15%;
-}
-
-.upper {
     display: flex;
+    flex-direction: row;
 }
 
 .left {
     flex: 50%;
-    padding: 10px;
 }
 
 .right {
     flex: 50%;
-    padding: 10px;
+    padding-top: 5%;
 }
 
 a:visited {

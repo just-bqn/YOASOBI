@@ -1,5 +1,5 @@
 .nav-bar {
-    position: fixed;
+    position: relative;
     left: 10%;
     width: 80%;
     overflow: hidden;
@@ -9,7 +9,7 @@
 .nav-bar button {
     background-color: lightslategray;
     color: darkslategrey;
-    font-family: Gotham;
+    font-family: 'Gotham';
     float: left;
     border: none;
     outline: none;
